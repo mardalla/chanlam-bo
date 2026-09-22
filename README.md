@@ -25,13 +25,8 @@ python src/featurize.py
 Run the experiments:
 
 ```
-python experiments/run_forced_repeat.py --lambda_di 0.0 --outdir results_forced_lam0
-python experiments/run_forced_repeat.py --lambda_di 1.0 --outdir results_forced_lam1
-python experiments/run_mandatory_reps.py --outdir results_mandatory
+python experiments/run_forced_repeat.py --outdir results_paper
+python experiments/run_mandatory_reps.py --outdir results_paper
 ```
 
-Defaults match the manuscript (budget 200, 30 seeds). Open `experiments/compare_all.ipynb` to regenerate the figures.
-
-## License
-
-MIT. See `LICENSE`.
+Defaults match the manuscript (budget 200, 30 seeds). Open `notebooks/01_compare_strategies.ipynb` to regenerate the figures.
